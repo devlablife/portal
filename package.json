@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "firebase-deploy-prd": "firebase --project devlablife deploy",
-    "deploy-prd": "yarn run firebase-deploy-prd ",
+    "deploy": "yarn run firebase-deploy-prd ",
     "emulate": "firebase  emulators:start --project devlablife"
   },
   "browserslist": "defaults, not ie <= 11",

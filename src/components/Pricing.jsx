@@ -6,65 +6,6 @@ import { Button } from '@/components/Button'
 import { Container } from '@/components/Container'
 import { Logomark } from '@/components/Logo'
 
-const plans = [
-  {
-    name: 'Starter',
-    featured: false,
-    price: { Monthly: '$0', Annually: '$0' },
-    description:
-      'You’re new to investing but want to do it right. Get started for free.',
-    button: {
-      label: 'Get started for free',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every day',
-      'Invest up to $1,500 each month',
-    ],
-    logomarkClassName: 'fill-gray-300',
-  },
-  {
-    name: 'Investor',
-    featured: false,
-    price: { Monthly: '$7', Annually: '$70' },
-    description:
-      'You’ve been investing for a while. Invest more and grow your wealth faster.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'One tip every hour',
-      'Invest up to $15,000 each month',
-      'Basic transaction anonymization',
-    ],
-    logomarkClassName: 'fill-gray-500',
-  },
-  {
-    name: 'VIP',
-    featured: true,
-    price: { Monthly: '$199', Annually: '$1,990' },
-    description:
-      'You’ve got a huge amount of assets but it’s not enough. To the moon.',
-    button: {
-      label: 'Subscribe',
-      href: '/register',
-    },
-    features: [
-      'Commission-free trading',
-      'Multi-layered encryption',
-      'Real-time tip notifications',
-      'No investment limits',
-      'Advanced transaction anonymization',
-      'Automated tax-loss harvesting',
-    ],
-    logomarkClassName: 'fill-cyan-500',
-  },
-]
 
 function CheckIcon(props) {
   return (
@@ -128,7 +69,7 @@ function Plan({
               className={clsx(
                 'transition duration-300',
                 activePeriod === 'Annually' &&
-                  'pointer-events-none translate-x-6 select-none opacity-0'
+                'pointer-events-none translate-x-6 select-none opacity-0'
               )}
             >
               {price.Monthly}
@@ -138,7 +79,7 @@ function Plan({
               className={clsx(
                 'absolute left-0 top-0 transition duration-300',
                 activePeriod === 'Monthly' &&
-                  'pointer-events-none -translate-x-6 select-none opacity-0'
+                'pointer-events-none -translate-x-6 select-none opacity-0'
               )}
             >
               {price.Annually}
@@ -189,7 +130,7 @@ function Plan({
   )
 }
 
-export function Pricing() {
+export function Pricing({ title, subtitle, plans }) {
   let [activePeriod, setActivePeriod] = useState('Monthly')
 
   return (
@@ -204,11 +145,10 @@ export function Pricing() {
             id="pricing-title"
             className="text-3xl font-medium tracking-tight text-gray-900"
           >
-            Flat pricing, no management fees.
+            {title}
           </h2>
           <p className="mt-2 text-lg text-gray-600">
-            Whether you’re one person trying to get ahead or a big firm trying
-            to take over the world, we’ve got a plan for you.
+            {subtitle}
           </p>
         </div>
 
@@ -237,7 +177,7 @@ export function Pricing() {
             <div
               aria-hidden="true"
               className={clsx(
-                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300',
+                'pointer-events-none absolute inset-0 z-10 grid grid-cols-2 overflow-hidden rounded-lg bg-cyan-500 transition-all duration-300 ' ,
                 activePeriod === 'Monthly'
                   ? '[clip-path:inset(0_50%_0_0)]'
                   : '[clip-path:inset(0_0_0_calc(50%-1px))]'
@@ -258,7 +198,7 @@ export function Pricing() {
           </div>
         </div>
 
-        <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
+        <div className="mx-auto mt-16 flex  justify-center items-center gap-x-8 gap-y-10 sm:mt-20 lg:max-w-none lg:grid-cols-3">
           {plans.map((plan) => (
             <Plan key={plan.name} {...plan} activePeriod={activePeriod} />
           ))}

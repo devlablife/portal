@@ -1,13 +1,8 @@
-import { useEffect, useMemo, useRef, useState } from 'react'
 import clsx from 'clsx'
 import {
-  motion,
-  useAnimationFrame,
-  useInView,
-  useMotionValue,
-  useSpring,
-  useTransform,
+  useInView
 } from 'framer-motion'
+import { useEffect, useMemo, useRef, useState } from 'react'
 
 import { Container } from '@/components/Container'
 
@@ -262,10 +257,10 @@ export function Reviews() {
           id="reviews-title"
           className="text-3xl font-medium tracking-tight text-gray-900 sm:text-center"
         >
-          Everyone is changing their life with Pocket.
+          Every day, thousands of people are discovering the benefits of DevLabLife
         </h2>
         <p className="mt-2 text-lg text-gray-600 sm:text-center">
-          Thousands of people have doubled their net-worth in the last 30 days.
+          We are proud to have helped so many people achieve their goals.
         </p>
         <ReviewGrid />
       </Container>
