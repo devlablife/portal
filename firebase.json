@@ -1,10 +1,46 @@
 {
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "hosting": {
+      "port": 3000
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
   "hosting": {
-    "public": "build",
+    "public": "public",
     "ignore": [
+      ".firebase/**",
+      ".firebaserc",
+      "firestore.rules",
       "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "**/*.log"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          }
+        ]
+      }
+    ],
+    "cleanUrls": true,
+    "rewrites": [
+      {
+        "source": "**",
+        "function": "web"
+      }
     ]
+  },
+  "functions": {
+    "runtime": "nodejs16",   
+    "source": "."
   }
 }
