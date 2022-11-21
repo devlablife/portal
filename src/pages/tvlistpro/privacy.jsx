@@ -31,8 +31,8 @@ export default function Privacy() {
           <div class="">
             <h1 className='text-2xl font-extrabold mb-4'> Privacy Policy </h1>
             <div className='mb-4'>
-              <p> Sir Studio has built the Channels Pro app as a free app. This SERVICE is provided free
-                of charge by Sir Studio and
+              <p> DevLablife  has built the Tv Lir Pro app as a free app. This SERVICE is provided free
+                of charge by DevLablife  and
                 is intended for use as it is. In-app purchases may apply. </p>
               <p> This page is used to inform website visitors about our policy regarding the collection,
                 use and disclosure of
@@ -45,7 +45,7 @@ export default function Privacy() {
               <p>
                 The terms used in this Privacy Policy have the same meaning
                 as in our Terms and
-                Conditions, which are accessible on Channels Pro, unless otherwise defined in this
+                Conditions, which are accessible on TV List Pro, unless otherwise defined in this
                 Privacy Policy. </p>
             </div>
             <h4 className='font-bold text-xl mb-3'> Collecting and using
@@ -89,7 +89,6 @@ export default function Privacy() {
             </div>
             <h4 className='font-bold text-xl mb-3'> Service providers </h4>
             <div className='mb-4'>
-
               <p> We may hire third-party companies and individuals for the following reasons: </p>
               <ul>
                 <li> To facilitate our service; </li>

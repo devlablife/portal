@@ -48,6 +48,45 @@ const plans = [
   },
 ]
 
+// const features = [
+//   {
+//     name: 'Play',
+//     description:
+//       'Whether it’s $1 or $1,000,000, we can put your money to work for you.',
+//     icon: DeviceArrowIcon,
+//   },
+//   {
+//     name: 'Build a balanced portfolio',
+//     description:
+//       'Invest in different industries to find the most opportunities to win huge.',
+//     icon: DeviceCardsIcon,
+//   },
+//   {
+//     name: 'Trade in real-time',
+//     description:
+//       'Get insider tips on big stock moves and act on them within seconds.',
+//     icon: DeviceClockIcon,
+//   },
+//   {
+//     name: 'Profit from your network',
+//     description:
+//       'Invite new insiders to get tips faster and beat even other Pocket users.',
+//     icon: DeviceListIcon,
+//   },
+//   {
+//     name: 'Encrypted and anonymized',
+//     description:
+//       'Cutting-edge security technology that even the NSA doesn’t know about keeps you hidden.',
+//     icon: DeviceLockIcon,
+//   },
+//   {
+//     name: 'Portfolio tracking',
+//     description:
+//       'Watch your investments grow exponentially, leaving other investors in the dust.',
+//     icon: DeviceChartIcon,
+//   },
+// ]
+
 const navlinks = [
   ['Features', '#features'],
   ['Reviews', '#reviews'],
@@ -89,7 +128,8 @@ export default function Home() {
           title={'Watch TV Shows and Movies Online'}
           subtitle={`TV List Pro was built for people who like to have their IP TV channels and movies organized in one place. It's a simple and easy to use application that allows you to watch your favorite TV shows and movies online for free`}
         />
-        <SecondaryFeatures />
+        {/* <SecondaryFeatures
+         /> */}
         <CallToAction
           title={'Watch TV Shows and Movies Online'}
           subtitle={`Download the app and create a playlist
