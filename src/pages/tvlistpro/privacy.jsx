@@ -7,7 +7,7 @@ import { Container } from '@/components/Container'
 const navlinks = [
   ['Features', '/tvlistpro/#features'],
   ['Reviews', '/tvlistpro/#reviews'],
-  ['Pricing', '/tvlistpro/#pricing'],
+  // ['Pricing', '/tvlistpro/#pricing'],
   ['FAQs', '/tvlistpro/#faqs'],
   ['Priacy Policy', '#'],
 ]

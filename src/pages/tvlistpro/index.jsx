@@ -5,9 +5,7 @@ import { CallToAction } from '@/components/CallToAction'
 import { Container } from '@/components/Container'
 import { Footer } from '@/components/Footer'
 import { Header } from '@/components/Header'
-import { Pricing } from '@/components/Pricing'
 import { FeaturesDesktop, FeaturesMobile, PrimaryFeatures } from '@/components/PrimaryFeatures'
-import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 
 
 const plans = [
@@ -90,7 +88,7 @@ const plans = [
 const navlinks = [
   ['Features', '#features'],
   ['Reviews', '#reviews'],
-  ['Pricing', '#pricing'],
+  // ['Pricing', '#pricing'],
   ['FAQs', '#faqs'],
   ['Privacy & Policy', '/tvlistpro/privacy'],
 ]
@@ -138,11 +136,11 @@ export default function Home() {
           googlePlayDownloadUrl={'http://googleplay.com'}
         />
         {/* <Reviews /> */}
-        <Pricing
+        {/* <Pricing
           title={'Pricing'}
           subtitle={`TV List Pro is free to use. You can watch TV shows and movies online for free. If you want to remove ads and get more features, you can subscribe to our premium plan.`}
           plans={plans}
-        />
+        /> */}
 
       </main>
       <Footer
