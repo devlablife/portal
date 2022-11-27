@@ -7,7 +7,6 @@ import { Container } from '@/components/Container'
 const navlinks = [
   ['Features', '/tvlistpro/#features'],
   ['Reviews', '/tvlistpro/#reviews'],
-  // ['Pricing', '/tvlistpro/#pricing'],
   ['FAQs', '/tvlistpro/#faqs'],
   ['Priacy Policy', '#'],
 ]
@@ -25,7 +24,7 @@ export default function Privacy() {
       <Header
         navlinks={navlinks}
         title={'TV List Pro'}
-        downloadUrl={'http://appstore.com'} />
+        downloadUrl={'https://tvlistpro.page.link/dl'} />
       <main>
         <Container>
           <div class="">

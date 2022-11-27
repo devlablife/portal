@@ -104,9 +104,6 @@ export function Header({downloadUrl,title,navlinks}) {
                             <MobileNavLink href="#reviews">
                               Reviews
                             </MobileNavLink>
-                            <MobileNavLink href="#pricing">
-                              Pricing
-                            </MobileNavLink>
                             <MobileNavLink href="#faqs">FAQs</MobileNavLink>
                           </div>
 

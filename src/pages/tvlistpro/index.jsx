@@ -88,7 +88,6 @@ const plans = [
 const navlinks = [
   ['Features', '#features'],
   ['Reviews', '#reviews'],
-  // ['Pricing', '#pricing'],
   ['FAQs', '#faqs'],
   ['Privacy & Policy', '/tvlistpro/privacy'],
 ]
@@ -107,7 +106,7 @@ export default function Home() {
         navlinks={navlinks}
         title={'TV List Pro'}
 
-        downloadUrl={'http://appstore.com'} />
+        downloadUrl={'https://tvlistpro.page.link/dl'} />
       <main>
         <Hero
           appDemo
@@ -132,21 +131,14 @@ export default function Home() {
           title={'Watch TV Shows and Movies Online'}
           subtitle={`Download the app and create a playlist
          today and start watching your favorite TV shows and movies online for free`}
-          appleStoreDownloadUrl={'http://appstore.com'}
-          googlePlayDownloadUrl={'http://googleplay.com'}
+          appleStoreDownloadUrl={'https://apps.apple.com/us/app/tvlistpro/6444597135'}
+          googlePlayDownloadUrl={'https://tvlistpro.page.link/dl'}
         />
-        {/* <Reviews /> */}
-        {/* <Pricing
-          title={'Pricing'}
-          subtitle={`TV List Pro is free to use. You can watch TV shows and movies online for free. If you want to remove ads and get more features, you can subscribe to our premium plan.`}
-          plans={plans}
-        /> */}
-
       </main>
       <Footer
         navlinks={navlinks}
         title={'TV List Pro'}
-        qrCode={'https://www.qr-code-generator.com/wp-content/themes/qr/new_structure/markets/core_market/generator/dist/generator/assets/images/websiteQRCode_noFrame.png'}
+        qrCode={'https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Ftvlistpro.page.link%2Fdl&chs=180x180&choe=UTF-8&chld=L|2'}
       />
     </>
   )

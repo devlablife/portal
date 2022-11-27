@@ -26,14 +26,8 @@ export default function Home() {
           title="DevLabLife"
           subtitle="A platform for developers to share their knowledge and learn from others."
         />
-        {/* <PrimaryFeatures />
-        <SecondaryFeatures />
-        <CallToAction />
-      */ }
         <Reviews
          />
-        {/* <Pricing /> */}
-        {/* <Faqs /> */}
       </main>
       <Footer
         title="DevLabLife"
